@@ -3,6 +3,7 @@ package base;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.epam.healenium.SelfHealingDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -15,7 +16,8 @@ import utils.Log;
 
 public class BaseTest {
 	
-	protected WebDriver driver;
+	//protected WebDriver driver;
+	protected SelfHealingDriver driver;
 	protected static ExtentReports extent;
 	protected ExtentTest test;
 	
@@ -34,7 +36,11 @@ public class BaseTest {
 	public void setUp() {
 		
 		Log.info("Starting WebDriver...");
-		driver = new ChromeDriver();
+
+		WebDriver delegate = new ChromeDriver();
+		driver=SelfHealingDriver.create(delegate);
+
+		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Log.info("Navigating to URL...");
 		driver.get("https://admin-demo.nopcommerce.com/login");

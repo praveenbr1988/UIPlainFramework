@@ -4,6 +4,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.epam.healenium.SelfHealingDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -42,7 +43,7 @@ public class ExtentReportManager {
 		return test;
 	}
 	
-	public static String captureScreenshot(WebDriver driver, String screenshotName) {
+	public static String captureScreenshot(SelfHealingDriver driver, String screenshotName) {
 		try {
 			
 			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

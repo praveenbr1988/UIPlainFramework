@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b45c3096-8603-4750-b865-f54c7ea6d9b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/TestData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testNGSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/db/sql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/healenium.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_2025-03-09_09-27-18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_2025-03-09_15-45-24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_2025-03-09_21-52-57.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_2025-03-09_21-55-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_2025-03-09_21-57-28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ExtentReport_2025-03-09_22-05-49.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentReportManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;praveenbr1988&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/praveenbr1988/UIPlainFramework.git&quot;,
+    &quot;accountId&quot;: &quot;535ccac8-0797-4c62-9d82-f113f2dc37c7&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -35,11 +53,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.UIPlainFramework [clean,test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/techi/OneDrive/Desktop/Personal1/Projects/SeleniumUIHybridFramework/UIPlainFramework/testNGSuite.xml.executor": "Debug",
     "TestNG.LoginTest.executor": "Run",
-    "git-widget-placeholder": "master",
+    "TestNG.LoginTest.testValidLogin.executor": "Debug",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/techi/OneDrive/Desktop/Personal1/Projects/SeleniumUIHybridFramework/UIPlainFramework/src/test/resources/testData",
+    "last_opened_file_path": "C:/Users/techi/OneDrive/Desktop/Personal1/Projects/SeleniumUIHybridFramework/UIPlainFramework",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -48,10 +69,83 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\techi\OneDrive\Desktop\Personal1\Projects\SeleniumUIHybridFramework\UIPlainFramework\src\test\resources\testData" />
       <recent name="C:\Users\techi\OneDrive\Desktop\Personal1\Projects\SeleniumUIHybridFramework\UIPlainFramework" />
+      <recent name="C:\Users\techi\OneDrive\Desktop\Personal1\Projects\SeleniumUIHybridFramework\UIPlainFramework\src\test\resources" />
+      <recent name="C:\Users\techi\OneDrive\Desktop\Personal1\Projects\SeleniumUIHybridFramework\UIPlainFramework\src\test\resources\testData" />
       <recent name="C:\Users\techi\OneDrive\Desktop\Personal1\Projects\SeleniumUIHybridFramework\UIPlainFramework\src\test\java" />
     </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/techi/OneDrive/Desktop/Personal1/Projects/SeleniumUIHybridFramework/UIPlainFramework/testNGSuite.xml">
+    <configuration name="UIPlainFramework [clean,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/techi/OneDrive/Desktop/Personal1/Projects/SeleniumUIHybridFramework/UIPlainFramework/testNGSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UIPlainFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNGSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testValidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UIPlainFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="testValidLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.UIPlainFramework [clean,test]" />
+      <item itemvalue="TestNG.C:/Users/techi/OneDrive/Desktop/Personal1/Projects/SeleniumUIHybridFramework/UIPlainFramework/testNGSuite.xml" />
+      <item itemvalue="TestNG.LoginTest.testValidLogin" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/techi/OneDrive/Desktop/Personal1/Projects/SeleniumUIHybridFramework/UIPlainFramework/testNGSuite.xml" />
+        <item itemvalue="TestNG.LoginTest.testValidLogin" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,5 +157,26 @@
       <updated>1741491999024</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
